@@ -43,6 +43,7 @@ public class BalleRigid : NetworkBehaviour // objet réseau
        if (transform.position.x < -maxDistanceX)
        {
            // Ici, il faudra aussi augmenter le score du joueur
+           ScoreManager.instance.AugmenteScoreClient();
            LanceBalleMilieu();
        }
 
@@ -50,6 +51,7 @@ public class BalleRigid : NetworkBehaviour // objet réseau
        if (transform.position.x > maxDistanceX)
        {
            // Ici, il faudra aussi augmenter le score du joueur
+           ScoreManager.instance.AugmenteHoteScore();
            LanceBalleMilieu();
        }
    }
