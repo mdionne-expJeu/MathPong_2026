@@ -302,8 +302,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   ShowTopMostFoldoutHeaderGroup: 1
+  pannelVictoire: {fileID: 1599388253380373298}
+  pannelDefaite: {fileID: 427913213553266157}
   scoreTxt: {fileID: 8260018454148600615}
-  pointageCible: 0
+  pointageCible: 5
 --- !u!114 &1419861234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +726,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8368640827468285621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1976413625}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Recommencer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &819026309019702802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1213,7 +1227,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8795588052517489334}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1976413625}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Recommencer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &2659735963728133119
 RectTransform:
   m_ObjectHideFlags: 0
