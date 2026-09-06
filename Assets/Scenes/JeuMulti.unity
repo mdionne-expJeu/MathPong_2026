@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 138154890}
   - component: {fileID: 138154889}
   - component: {fileID: 138154888}
+  - component: {fileID: 138154892}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -256,6 +257,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &138154892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138154887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82afd1efa0578b547898a387e8595a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CamShaker
 --- !u!1 &1419861231
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
   GlobalObjectIdHash: 167900440
   InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -425,6 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
   GlobalObjectIdHash: 720461527
   InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -445,7 +460,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4649309529798842534}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -497,7 +512,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -2130,6 +2145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9002141496166997945, guid: f70cf6e741f454d0a88e1ac3c1712f38, type: 3}
+      propertyPath: camShaker
+      value: 
+      objectReference: {fileID: 138154892}
     - target: {fileID: 3664805538507638369, guid: f70cf6e741f454d0a88e1ac3c1712f38, type: 3}
       propertyPath: PositionInterpolationType
       value: 2
@@ -2589,6 +2608,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
